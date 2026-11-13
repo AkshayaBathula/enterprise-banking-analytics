@@ -1,0 +1,16 @@
+{
+  "revenue_2026": 418690487.1,
+  "expense_2026": 287539630.7,
+  "profit_2026": 131150856.4,
+  "margin_2026": 0.313241,
+  "growth_yoy": 0.061182,
+  "budget_revenue_2026": 424018929.34,
+  "churn_rate_2026": 0.012569,
+  "regions": {
+    "Northeast": 91578652.39,
+    "South": 100680799.59,
+    "Midwest": 108551553.71,
+    "West": 117879481.41
+  },
+  "lowest_profit_branch": 3
+}

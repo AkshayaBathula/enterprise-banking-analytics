@@ -1,0 +1,13 @@
+BranchID,BranchName,Region,State
+1,Branch 01,Northeast,DE
+2,Branch 02,Northeast,PA
+3,Branch 03,Northeast,NY
+4,Branch 04,South,NJ
+5,Branch 05,South,GA
+6,Branch 06,South,FL
+7,Branch 07,Midwest,TX
+8,Branch 08,Midwest,NC
+9,Branch 09,Midwest,IL
+10,Branch 10,West,OH
+11,Branch 11,West,CA
+12,Branch 12,West,WA

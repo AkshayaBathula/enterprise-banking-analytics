@@ -1,0 +1,14 @@
+-- Create each measure separately in Power BI Desktop (Modeling > New measure).
+Total Revenue = SUM(FactFinancials[Revenue])
+Total Expense = SUM(FactFinancials[Expense])
+Net Profit = [Total Revenue] - [Total Expense]
+Profit Margin % = DIVIDE([Net Profit], [Total Revenue])
+Budget Revenue = SUM(FactFinancials[BudgetRevenue])
+Revenue Variance = [Total Revenue] - [Budget Revenue]
+Revenue Variance % = DIVIDE([Revenue Variance], [Budget Revenue])
+Revenue Prior Year = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR(DimDate[Date]))
+Revenue YoY % = DIVIDE([Total Revenue] - [Revenue Prior Year], [Revenue Prior Year])
+Eligible Customers = SUM(FactCustomerStatus[OpeningEligibleFlag])
+Churned Customers = SUM(FactCustomerStatus[ChurnFlag])
+Monthly Churn Rate % = DIVIDE([Churned Customers], [Eligible Customers])
+Retention Rate % = 1 - [Monthly Churn Rate %]
